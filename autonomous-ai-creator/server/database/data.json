@@ -1,0 +1,536 @@
+{
+  "tasks": [
+    {
+      "id": "task-1786257233298",
+      "goal": "cd\n",
+      "name": "cd\n",
+      "status": "running",
+      "progress": 40,
+      "createdAt": "2026-08-09T06:33:53.298Z",
+      "summary": "Autonomous plan generated with 5 ordered subtasks across specialized AI agents.",
+      "estimatedTotalDuration": "7.5 minutes",
+      "subtasks": [
+        {
+          "id": "subtask-1",
+          "name": "Analyze Objective & Define Requirements",
+          "description": "Deconstruct user goal \"cd\n...\" into technical requirements.",
+          "agentId": "planner",
+          "dependencies": [],
+          "status": "completed",
+          "priority": "high",
+          "estDuration": "1 min",
+          "requiresApproval": false,
+          "toolNeeded": "file_reader",
+          "currentAgent": "Planner Agent",
+          "output": "### Architecture & Execution Breakdown\n\n- **Target Objective**: cd\n\n- **Decomposition**: Deconstruct user goal \"cd\n...\" into technical requirements.\n- **Key Milestones**: Modular subcomponents mapped with zero circular dependencies.\n- **Risk Factor**: Low (Automated QA & Human Approval triggers active).",
+          "toolResult": {
+            "path": "Analyze Objective & Define Requirements",
+            "content": "// Workspace file: Analyze Objective & Define Requirements\nexport default { version: '1.0.0', status: 'verified' };",
+            "exists": true
+          },
+          "filesGenerated": [],
+          "completedAt": "2026-08-09T06:33:54.632Z"
+        },
+        {
+          "id": "subtask-2",
+          "name": "Gather Domain Knowledge & Best Practices",
+          "description": "Perform web and document research to collect authoritative implementation patterns.",
+          "agentId": "research",
+          "dependencies": [
+            "subtask-1"
+          ],
+          "status": "completed",
+          "priority": "medium",
+          "estDuration": "2 min",
+          "requiresApproval": false,
+          "toolNeeded": "web_search",
+          "currentAgent": "Research Agent",
+          "output": "### Market & Technical Intelligence Summary\n\n1. **Core Discoveries**: Best practices recommend modular micro-components and atomic state management.\n2. **Competitive Edge**: Modern dark-mode aesthetic with reactive glassmorphism and sub-100ms UI latency.\n3. **Recommended Stack**: React 18, Vite, Tailwind CSS, Express API, and file-based JSON persistence.",
+          "toolResult": {
+            "query": "Gather Domain Knowledge & Best Practices",
+            "results": [
+              {
+                "title": "Gather Domain Knowledge & Best Practices - Best Practices 2026",
+                "snippet": "Comprehensive guide covering architectural patterns, component isolation, and accessibility.",
+                "url": "https://docs.example.com/guide"
+              },
+              {
+                "title": "Gather Domain Knowledge & Best Practices - Technical Case Study",
+                "snippet": "How modern engineering teams achieve 99.9% uptime with autonomous agents.",
+                "url": "https://tech.example.com/case-study"
+              }
+            ],
+            "timestamp": "2026-08-09T06:33:55.879Z"
+          },
+          "filesGenerated": [],
+          "completedAt": "2026-08-09T06:33:55.879Z"
+        },
+        {
+          "id": "subtask-3",
+          "name": "Synthesize Core Solution & Assets",
+          "description": "Generate main deliverables including code, data models, or structured documents.",
+          "agentId": "developer",
+          "dependencies": [
+            "subtask-2"
+          ],
+          "status": "in_progress",
+          "priority": "high",
+          "estDuration": "3 min",
+          "requiresApproval": false,
+          "toolNeeded": "file_writer",
+          "currentAgent": "Developer Agent"
+        },
+        {
+          "id": "subtask-4",
+          "name": "Validate & Quality Assurance Check",
+          "description": "Audit output quality, perform automated validation, and verify completeness.",
+          "agentId": "testing",
+          "dependencies": [
+            "subtask-3"
+          ],
+          "status": "pending",
+          "priority": "high",
+          "estDuration": "1.5 min",
+          "requiresApproval": false,
+          "simulateFailureFirst": true,
+          "toolNeeded": "code_runner"
+        },
+        {
+          "id": "subtask-5",
+          "name": "Finalize & Export Deliverable",
+          "description": "Compile final result bundle, generate executive summary, and save artifacts.",
+          "agentId": "reviewer",
+          "dependencies": [
+            "subtask-4"
+          ],
+          "status": "pending",
+          "priority": "high",
+          "estDuration": "1 min",
+          "requiresApproval": false,
+          "toolNeeded": "doc_generator"
+        }
+      ],
+      "tokensUsed": 1756,
+      "iterations": 3,
+      "projectId": "proj-1",
+      "startTime": 1786257233370,
+      "updatedAt": "2026-08-09T06:33:57.110Z",
+      "currentAgent": "Developer Agent",
+      "currentAction": "Executing subtask: Synthesize Core Solution & Assets"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "name": "E-Commerce Platform Launch",
+      "description": "Full-stack online store for fashion brand with payment, cart, and dashboard",
+      "status": "completed",
+      "createdAt": "2026-08-06T06:32:07.248Z",
+      "updatedAt": "2026-08-08T06:32:07.249Z",
+      "taskCount": 10,
+      "completedTaskCount": 10,
+      "agentCount": 4,
+      "filesCount": 12
+    },
+    {
+      "id": "proj-2",
+      "name": "AI SaaS Marketing Campaign",
+      "description": "Multi-channel marketing assets, landing page copy, social media calendar & analytics plan",
+      "status": "completed",
+      "createdAt": "2026-08-04T06:32:07.249Z",
+      "updatedAt": "2026-08-07T06:32:07.249Z",
+      "taskCount": 7,
+      "completedTaskCount": 7,
+      "agentCount": 3,
+      "filesCount": 8
+    }
+  ],
+  "agents": [
+    {
+      "id": "planner",
+      "name": "Planner Agent",
+      "role": "Goal Decomposition & Architecture",
+      "description": "Converts high-level goals into structured execution plans, dependency graphs, and step estimates.",
+      "status": "idle",
+      "capabilities": [
+        "Goal Parsing",
+        "Task Decomposition",
+        "Dependency Mapping",
+        "Resource Estimation"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are an expert AI software architect and project manager. Decompose complex user goals into atomic, dependency-mapped subtasks.",
+      "tasksCompleted": 42,
+      "successRate": 98
+    },
+    {
+      "id": "research",
+      "name": "Research Agent",
+      "role": "Information Gathering & Synthesis",
+      "description": "Searches web sources, analyzes competitor data, extracts technical docs, and summarizes domain knowledge.",
+      "status": "idle",
+      "capabilities": [
+        "Web Search",
+        "Competitor Analysis",
+        "Doc Extraction",
+        "Market Research"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are a meticulous research intelligence agent. Gather factual information, synthesize data, and cite authoritative sources.",
+      "tasksCompleted": 87,
+      "successRate": 96
+    },
+    {
+      "id": "developer",
+      "name": "Developer Agent",
+      "role": "Full-Stack Code Generation",
+      "description": "Writes production-ready frontend, backend, database scripts, and API integration modules.",
+      "status": "idle",
+      "capabilities": [
+        "React/Vite",
+        "Node/Express",
+        "SQL/Postgres",
+        "API Integration",
+        "Refactoring"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are a senior full-stack developer. Write clean, modular, robust, and well-documented code adhering to modern best practices.",
+      "tasksCompleted": 134,
+      "successRate": 95
+    },
+    {
+      "id": "designer",
+      "name": "Designer Agent",
+      "role": "UI/UX & Design Systems",
+      "description": "Creates design tokens, wireframe specs, responsive layouts, color palettes, and Tailwind themes.",
+      "status": "idle",
+      "capabilities": [
+        "UI Wireframing",
+        "Color Palettes",
+        "Design Systems",
+        "CSS/Tailwind",
+        "UX Micro-interactions"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are a world-class UI/UX designer. Create stunning visual designs, color schemes, typography guidelines, and component specifications.",
+      "tasksCompleted": 65,
+      "successRate": 99
+    },
+    {
+      "id": "writer",
+      "name": "Writer Agent",
+      "role": "Content & Documentation",
+      "description": "Drafts marketing copy, technical documentation, READMEs, email sequences, and user guides.",
+      "status": "idle",
+      "capabilities": [
+        "Technical Writing",
+        "Copywriting",
+        "SEO Content",
+        "Documentation",
+        "Email Campaigns"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are a master technical writer and marketing strategist. Produce compelling, clear, and audience-tailored prose.",
+      "tasksCompleted": 112,
+      "successRate": 97
+    },
+    {
+      "id": "data",
+      "name": "Data Agent",
+      "role": "Analytics & Schema Modeling",
+      "description": "Analyzes JSON/CSV datasets, builds statistical summaries, defines DB schemas, and designs charts.",
+      "status": "idle",
+      "capabilities": [
+        "Data Cleaning",
+        "Aggregation",
+        "Schema Design",
+        "Chart Configs",
+        "SQL Metrics"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are a lead data scientist and database architect. Model relational data, analyze statistical metrics, and format insights.",
+      "tasksCompleted": 58,
+      "successRate": 94
+    },
+    {
+      "id": "testing",
+      "name": "Testing Agent",
+      "role": "Automated QA & Error Recovery",
+      "description": "Runs automated linting, unit test generation, synthetic execution checks, and pinpoints root causes.",
+      "status": "idle",
+      "capabilities": [
+        "Syntax Auditing",
+        "Unit Tests",
+        "Bug Detection",
+        "Error Diagnostics",
+        "Auto-Fix Props"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are an unyielding QA engineer and debugging specialist. Test code, isolate failure points, and propose exact bug fixes.",
+      "tasksCompleted": 91,
+      "successRate": 96
+    },
+    {
+      "id": "reviewer",
+      "name": "Reviewer Agent",
+      "role": "Quality Assurance & Governance",
+      "description": "Audits deliverables against initial user goals, checks accessibility, performance, and security rules.",
+      "status": "idle",
+      "capabilities": [
+        "Code Audit",
+        "Goal Alignment",
+        "Security Check",
+        "A11y Audit",
+        "Final Signoff"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are a chief product officer and code reviewer. Ensure outputs strictly satisfy user requirements, safety, and performance standard.",
+      "tasksCompleted": 76,
+      "successRate": 99
+    },
+    {
+      "id": "manager",
+      "name": "Manager Agent",
+      "role": "Orchestrator & Supervisor",
+      "description": "Directs workflow sequence, selects next active agent, monitors resource budget, and requests human signoff.",
+      "status": "idle",
+      "capabilities": [
+        "State Management",
+        "Agent Dispatch",
+        "Budget Guardrails",
+        "Approval Trigger",
+        "Failure Recovery"
+      ],
+      "avatar": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&auto=format&fit=crop&q=80",
+      "systemPrompt": "You are the central Autonomous AI Manager. Orchestrate subtasks, evaluate agent results, manage memory state, and ensure safety.",
+      "tasksCompleted": 156,
+      "successRate": 98
+    }
+  ],
+  "tools": [
+    {
+      "id": "web_search",
+      "name": "Web Search",
+      "category": "Research",
+      "permission": "read-only",
+      "description": "Searches public web endpoints for real-time documentation, articles, and news.",
+      "enabled": true
+    },
+    {
+      "id": "file_reader",
+      "name": "File Reader",
+      "category": "FileSystem",
+      "permission": "read-only",
+      "description": "Reads contents of local workspace files, scripts, images, and documents.",
+      "enabled": true
+    },
+    {
+      "id": "file_writer",
+      "name": "File Writer",
+      "category": "FileSystem",
+      "permission": "sandboxed",
+      "description": "Creates or modifies files inside project workspace directory.",
+      "enabled": true
+    },
+    {
+      "id": "code_runner",
+      "name": "Code Execution",
+      "category": "Developer",
+      "permission": "sandboxed",
+      "description": "Executes JS/Python code snippets in an isolated runtime environment.",
+      "enabled": true
+    },
+    {
+      "id": "db_access",
+      "name": "Database Access",
+      "category": "Data",
+      "permission": "restricted",
+      "description": "Executes SQL schema queries and data transformations.",
+      "enabled": true
+    },
+    {
+      "id": "http_api",
+      "name": "HTTP/API Client",
+      "category": "Integration",
+      "permission": "sandboxed",
+      "description": "Sends GET/POST HTTP requests to external API services.",
+      "enabled": true
+    },
+    {
+      "id": "doc_generator",
+      "name": "Document Generator",
+      "category": "Writer",
+      "permission": "sandboxed",
+      "description": "Compiles formatted Markdown, PDF, and HTML documentation packages.",
+      "enabled": true
+    },
+    {
+      "id": "image_generator",
+      "name": "Image Generator",
+      "category": "Design",
+      "permission": "sandboxed",
+      "description": "Generates UI graphics, mockups, and placeholder visuals.",
+      "enabled": true
+    },
+    {
+      "id": "browser_auto",
+      "name": "Browser Automation",
+      "category": "QA",
+      "permission": "restricted",
+      "description": "Automates browser interaction and visual snapshot testing.",
+      "enabled": true
+    }
+  ],
+  "workflows": [
+    {
+      "id": "wf-1",
+      "name": "Full Application Build",
+      "description": "End-to-end software development pipeline: Plan -> Research -> Design -> Code -> Test -> Review -> Deploy",
+      "nodes": [
+        {
+          "id": "n1",
+          "agent": "planner",
+          "name": "Plan & Architecture"
+        },
+        {
+          "id": "n2",
+          "agent": "research",
+          "name": "Competitor & Tech Research"
+        },
+        {
+          "id": "n3",
+          "agent": "designer",
+          "name": "UI/UX Specs"
+        },
+        {
+          "id": "n4",
+          "agent": "developer",
+          "name": "Frontend & Backend Code"
+        },
+        {
+          "id": "n5",
+          "agent": "testing",
+          "name": "QA & Error Check"
+        },
+        {
+          "id": "n6",
+          "agent": "reviewer",
+          "name": "Final Review & Approval"
+        }
+      ],
+      "createdAt": "2026-08-09T06:32:07.249Z"
+    },
+    {
+      "id": "wf-2",
+      "name": "Marketing Campaign Launch",
+      "description": "Automated marketing workflow: Research -> Content Creation -> Design Graphics -> Review -> Approval",
+      "nodes": [
+        {
+          "id": "n1",
+          "agent": "planner",
+          "name": "Campaign Strategy"
+        },
+        {
+          "id": "n2",
+          "agent": "research",
+          "name": "Audience Research"
+        },
+        {
+          "id": "n3",
+          "agent": "writer",
+          "name": "Copywriting & Landing Page"
+        },
+        {
+          "id": "n4",
+          "agent": "designer",
+          "name": "Ad Creatives"
+        },
+        {
+          "id": "n5",
+          "agent": "reviewer",
+          "name": "Brand Governance Check"
+        }
+      ],
+      "createdAt": "2026-08-09T06:32:07.249Z"
+    }
+  ],
+  "files": [],
+  "logs": [
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Agent Developer Agent invoked tool \"file_writer\"",
+      "agentId": "developer",
+      "timestamp": "2026-08-09T06:33:57.102Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Dispatched subtask \"Synthesize Core Solution & Assets\" to Developer Agent",
+      "agentId": "developer",
+      "timestamp": "2026-08-09T06:33:55.896Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Completed subtask \"Gather Domain Knowledge & Best Practices\" successfully ✓",
+      "agentId": "research",
+      "timestamp": "2026-08-09T06:33:55.879Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Agent Research Agent invoked tool \"web_search\"",
+      "agentId": "research",
+      "timestamp": "2026-08-09T06:33:55.874Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Dispatched subtask \"Gather Domain Knowledge & Best Practices\" to Research Agent",
+      "agentId": "research",
+      "timestamp": "2026-08-09T06:33:54.657Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Completed subtask \"Analyze Objective & Define Requirements\" successfully ✓",
+      "agentId": "planner",
+      "timestamp": "2026-08-09T06:33:54.636Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Agent Planner Agent invoked tool \"file_reader\"",
+      "agentId": "planner",
+      "timestamp": "2026-08-09T06:33:54.626Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Dispatched subtask \"Analyze Objective & Define Requirements\" to Planner Agent",
+      "agentId": "planner",
+      "timestamp": "2026-08-09T06:33:53.382Z"
+    },
+    {
+      "taskId": "task-1786257233298",
+      "level": "info",
+      "message": "Autonomous Orchestrator started for goal: \"cd\n\"",
+      "agentId": "manager",
+      "timestamp": "2026-08-09T06:33:53.372Z"
+    }
+  ],
+  "settings": {
+    "aiProvider": "mock",
+    "geminiApiKey": "",
+    "openaiApiKey": "",
+    "anthropicApiKey": "",
+    "maxIterations": 25,
+    "maxRetries": 3,
+    "maxExecutionTimeSec": 600,
+    "tokenBudget": 100000,
+    "requireApprovalDefault": true,
+    "autoRetryOnFailure": true,
+    "darkMode": true
+  }
+}
